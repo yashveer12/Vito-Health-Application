@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>vito — Upload Organ Report</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <div class="container">
+      <div class="brand">vito</div>
+      <div class="navlinks">
+        <a class="nav-item" href="#">search</a>
+        <a class="nav-item" href="#">browse</a>
+        <a class="contact" href="#">contact us</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <small class="eyebrow">CASE STUDY</small>
+          <h2>Upload Organ Report — Quick & Secure</h2>
+          <p>Choose the organ and upload your report. Files are stored securely and organized per organ type.</p>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <h1>vito</h1>
+      <p class="subtitle">Upload Organ Report</p>
+    </header>
+    <form id="uploadForm">
+      <label for="organ">Select Organ</label>
+      <select id="organ" name="organ" required>
+        <option value="Heart">Heart</option>
+        <option value="Pancreas">Pancreas</option>
+        <option value="Liver">Liver</option>
+        <option value="Blood">Blood</option>
+        <option value="Lungs">Lungs</option>
+        <option value="Kidney">Kidney</option>
+      </select>
+
+      <label for="report">Select Report (pdf/images allowed)</label>
+      <input type="file" id="report" name="report" required />
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <div id="status"></div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
