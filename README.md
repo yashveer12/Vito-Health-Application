@@ -1,6 +1,12 @@
-# vito (temporary name: xyz)
+# Vito
 
 Simple web app to select an organ and upload a report. Uploads are stored under `uploads/<organ>/`.
+
+Onboarding Git Repository
+
+```
+git clone https://github.com/yashveer12/Vito-Health-Application.git
+```
 
 Quick start
 
